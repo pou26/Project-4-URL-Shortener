@@ -25,7 +25,7 @@ const redisClient = redis.createClient(
   //1. connect to the server
 //2. use the commands :
 
-//Connection setup for redis
+//------------Connection setup for redis---------------//
 
 const SET_ASYNC = promisify(redisClient.SET).bind(redisClient);
 const GET_ASYNC = promisify(redisClient.GET).bind(redisClient);
